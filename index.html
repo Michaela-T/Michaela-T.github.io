@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Clicker Game</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HtmlThings.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Clicker Game</div>
-      </div>
-    </div>
-  </body>
+<html>
+    <head>
+        <title>Clicker Game - Home Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Ultimate Generic Clicker Game</h1>
+
+        <p>It's a pretty simple game. kill Monsters to get Gold to buy Items in the Shop, in order to kill more Monsters, etc... </br>
+            there is also a Final Boss, because I thought it would be fun to make.</p>
+        
+        <a href="clicker-game.html"><p>Click to play game</p></a>
+
+        <br>
+        <P>Slay monsters from the weak Hell Hound,</P>
+        <img src="Hound.PNG" alt = "Hell Hound" class="center" style="width:400px;height:550px;">
+        <br>
+        <p>to the mighty Arch Demon...</p>
+        <img src="Demon.PNG" alt = "Arch Demon" class="center" style="width:400px;height:550px;">  
+        <br>
+        <p> Even to the Demon King himself!</p>
+        <img src="King.png" alt = "Demon King" class="center" style="width:900px;height:700px;"> 
+        <p>Along with an Auto-Heal abillity, the Demon King has 2 special moves:<br> Self Heal, which recovers his health by a large amount, and...<br> Stun, which stuns all your companions for 5 seconds. Leaving you to fight on your own. <br> The Demon King uses a special move every 10 seconds. </p>
+    </body>
 </html>
