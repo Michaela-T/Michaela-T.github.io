@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: #B28F6F;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    padding-top: 20px;
+    font-family:  'Times New Roman', Times, serif;
+    color: #D6C2B0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.small{
+    
+}
