@@ -1,0 +1,157 @@
+/*Make scrolling froom bookmarks smooth*/
+html { scroll-behavior: smooth; }
+
+/*Body style*/
+body
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #B4E2F3;
+    background-repeat: round;
+    background-image: url("images/pattern.jpg");
+}
+
+/*Make scrollbar invisible */
+/* ::-webkit-scrollbar { display:none; } */
+
+/*HEADER*/
+
+.Header
+{
+    position:fixed;
+	top:0;
+	z-index: 1;
+	
+	height:4vw;
+    width:100%;
+	/* background-color:rgba(255, 255, 255, 0.1);  */
+}
+
+.Header:hover
+{
+	background-color:rgba(209, 209, 209, 0.3);
+}
+
+/* Logo */
+.HeaderLogo
+{
+    position: relative;
+    float: left;
+    margin-top: -.2vw;
+    margin-left: 2vh;
+
+    height: 3vw;
+    font-size: 3vw;
+	text-decoration: none;
+
+	filter:drop-shadow(0 5px 3px rgb(131, 131, 131));
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.HeaderLogo a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.HeaderLogo:hover
+{
+    cursor: pointer;
+    filter: brightness(60%);
+    margin-left: 2.5vh;
+}
+
+/* Link Buttons */
+
+.HeaderLink
+{
+	position:relative;
+	float:right;
+	margin-top:1vw;
+	margin-left:-.5vw;
+    margin-right:1vw;
+	height:2.5vw;
+    
+    text-decoration:none;
+	transition-duration:0.1s;
+}
+
+.HeaderLink:hover
+{
+    /*#6A96A6*/
+    filter: brightness(70%);
+	transform:scale(1.1);
+}
+
+/* Home page */
+
+.HomePage { text-align: center; }
+
+.HomeButton
+{
+	position:relative;
+	padding: 1vw 1vw;
+	margin-top: 40vh;
+    display: inline-block;
+    
+    height: 12vh;	
+    width: 35vh;
+
+    font-size: 10vh;
+	text-align:center;
+    
+	border-radius:20px;
+	color:#ffffff;
+	background-color:rgba(32, 32, 32, 0);
+	filter:drop-shadow(0 5px 3px rgb(131, 131, 131));
+    
+	transition-duration: 0.3s;
+}
+
+.HomeButton:hover
+{
+	cursor:pointer;
+    width: 40vh;
+    height: 15vh;	
+	transform:translateY(-10px);
+    color:#6A96A6;
+	background-color:rgb(255, 255, 255, .7);  
+}
+
+.Divider
+{
+    position:relative;
+    float: left;
+    width:100%;
+    height:5vw;
+
+    /* background-color:rgb(30,30,30); */
+}
+
+.ContentBackground
+{
+    position: relative;
+    text-align: center;
+    margin-top: 23vw;
+
+    float:left;
+    top: 0vw;
+    width:100%;
+    height:37vw;
+
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.ContentTitle
+{
+    position:relative;
+    float:left;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    font-size: 3.5vh;
+
+    color: #6A96A6;
+}

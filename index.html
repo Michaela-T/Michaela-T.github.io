@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Clicker Game - Home Page</title>
-        <link rel="stylesheet" href="style.css">
+        <title> khaela | Home </title>
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-         <h1>Ultimate Generic Clicker Game</h1>
+        <!-- Header -->
+        <div class="Header">
+            <h1 class="HeaderLogo"><a href="#Home">khaela</a></h1>
+            <a href="mailto: michaelataweel@gmail.com"><img class="HeaderLink" src="icons/mail.png" alt = "Mail Link"></a>
+            <a href="https://www.linkedin.com/in/michaelataweel/" target="_blank"><img class="HeaderLink" src="icons/LinkedIn.png" alt = "Mail Link"></a>
+            <a href="https://github.com/Michaela-T" target="_blank"><img class="HeaderLink" src="icons/Github.png" alt = "Mail Link"></a>
+            <a href="https://khaela.itch.io/" target="_blank"><img class="HeaderLink" src="icons/Itch io.png" alt = "Mail Link"></a>
+        </div>
 
-        <p>It's a pretty simple game. kill Monsters to get Gold to buy things from the Shop, in order to kill more Monsters, etc... </br>
-            there is also a Final Boss, because I thought it would be fun to make. </p>
-        
-        <a href="clicker-game.html"><p>Click to play game</p></a>
+        <!-- Background -->
 
-        <br>
-        <P>Slay monsters from the weak Hell Hound,</P>
-        <img src="Images/Hound.png" alt = "Hell Hound" class="center" style="width:400px;height:550px;">
-        <br>
-        <p>to the mighty Arch Demon...</p>
-        <img src="Images/Demon.png" alt = "Arch Demon" class="center" style="width:400px;height:550px;">  
-        <br>
-        <p> Even to the Demon King himself!</p>
-        <img src="Images/King.png" alt = "Demon King" class="center" style="width:900px;height:700px;"> 
-        <p>Along with an Auto-Heal abillity, the Demon King has 2 special moves:<br> Self Heal, which recovers his health by a large amount, and...<br> Stun, which stuns all your companions for 5 seconds, leaving you to fight on your own. <br> The Demon King uses a special move every 10 seconds. </p>
+        <video width="100%" height="100%" autoplay muted loop
+		style="position:absolute; top:0; left:0; z-index:-100; filter: blur(7px) brightness(80%); object-fit: cover;">
+            <source src="videos/ConscienceClash_gameplaycut.mp4" type="video/mp4">
+        </video>
+     
+        <!-- Home Page -->
+        <div class="HomePage" id="Home">
+                <a href="#About"><div class="HomeButton">About</div></a>
+                <a href="#Work"><div class="HomeButton">Work</div></a>
+                <a href="#Contact"><div class="HomeButton">Contact</div></a>
+        </div>
+       
+        <!-- About Page -->
+        <div class="ContentBackground" style="margin-top: 30vw">
+            <a id="About" style="position:relative; float:left; margin-top:-7vw;"></a>
+            <img src="images/pfp.jpg" style="position: relative; float:center; margin-top: 9vh; margin-left: 73vw; width: 20vw; height: 55vh;">
+            <h1 class="ContentTitle">About</h1>
+        </div>
+
+        <!-- Works Page -->
+        <!-- <a id="Work" style="position:relative; float:left; margin-top:60vw;"></a> -->
+        <div class="ContentBackground">
+                <a id="Work" style="position:relative; float:left; margin-top:-7vw;"></a>
+        </div>
+        <div class="ContentBackground"></div>
+        <div class="ContentBackground"></div>
+
+
+
     </body>
 </html>
