@@ -1,0 +1,10 @@
+blue #B4E2F3
+
+pink #F2CBD4
+
+yellow #F2ED9B 
+
+dark yellow accent #A6A372
+
+dark blue accent #6A96A6
+

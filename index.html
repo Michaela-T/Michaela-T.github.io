@@ -9,17 +9,34 @@
         <div class="Header">
             <h1 class="HeaderLogo"><a href="#Home">khaela</a></h1>
             <a href="mailto: michaelataweel@gmail.com"><img class="HeaderLink" src="icons/mail.png" alt = "Mail Link"></a>
-            <a href="https://www.linkedin.com/in/michaelataweel/" target="_blank"><img class="HeaderLink" src="icons/LinkedIn.png" alt = "Mail Link"></a>
-            <a href="https://github.com/Michaela-T" target="_blank"><img class="HeaderLink" src="icons/Github.png" alt = "Mail Link"></a>
-            <a href="https://khaela.itch.io/" target="_blank"><img class="HeaderLink" src="icons/Itch io.png" alt = "Mail Link"></a>
+            <a href="https://www.linkedin.com/in/michaelataweel/" target="_blank"><img class="HeaderLink" src="icons/LinkedIn.png" alt = "LinkedIn Link"></a>
+            <a href="https://github.com/Michaela-T" target="_blank"><img class="HeaderLink" src="icons/Github.png" alt = "Github Link"></a>
+            <a href="https://khaela.itch.io/" target="_blank"><img class="HeaderLink" src="icons/Itch io.png" alt = "Itch.io Link"></a>
         </div>
 
         <!-- Background -->
         <video width="100%" height="100%" autoplay muted loop
-		style="	box-shadow: 0 2px 10px; position:absolute; top:0; left:0; z-index:-100; filter: blur(7px) brightness(80%); object-fit: cover;">
+		style="	box-shadow: 0 2px 10px; position:absolute; top:0; left:0; z-index:-100; filter: blur(7px) brightness(90%); object-fit: cover;">
             <source src="videos/ConscienceClash_gameplaycut.mp4" type="video/mp4">
         </video>
      
+        <!-- Scroll up button -->
+        <a href="#Home"><img class="ScrollButton" src="icons/UpIcon.png" alt="Scroll Up"></a>
+        <!-- TODO: Fix this code -->
+        <script>
+            //Get the button
+            var upButton = document.getElementByClassName("ScrollButton");
+            //When the user scrolls down from the top of the document, show the button
+            window.onscroll = function() { scrollFunction() };
+            function scrollFunction()
+            {
+                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                    upButton.style.display = "block";
+                else
+                    upButton.style.display = "none";
+            }
+        </script>
+
         <!-- Home Page -->
         <div class="HomePage" id="Home">
                 <a href="#About"><div class="HomeButton">About</div></a>
@@ -36,24 +53,79 @@
             <!-- Text -->
             <h1 class="ContentTitle">About</h1>
             <br>
-            <p class="ContentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="ContentText" style="margin-top: -18vw; margin-left: 6vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
         <!-- Works Page -->
-        <!-- <a id="Work" style="position:relative; float:left; margin-top:60vw;"></a> -->
+        <!-- GRIMRED -->
         <div class="ContentBackground">
-                <a id="Work" style="position:relative; float:left; margin-top:-7vw;"></a>
-                <!-- Text -->
-                <h1 class="ContentTitle">GRIMRED</h1>
+            <!-- Link point -->
+            <a id="Work" style="position:relative; float:left; margin-top:-7vw;"></a>
+            <!-- Title -->
+            <h1 class="ContentTitle">GRIMRED</h1>
+            <!-- Tags -->
+            <div class="TagGroup">
+                <h2 class="Tag">Game</h2>
+                <h2 class="Tag">In-Development</h2>
+                <h2 class="Tag">Horror</h2>
+                <h2 class="Tag">Top Down</h2>
+                <h2 class="Tag">Single Player</h2>
+                <h2 class="Tag">3D</h2>
+            </div>
+                <!-- Description -->
+                <br>
+                <p class="ContentText" style="margin-top: 8vw; margin-left: -14vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Video -->
+                <video class="ContextVideo" controls src="videos/GRIMRED_gameplay.mp4"></video>
+                <!-- Play Buttons -->
+                <h1 class="UnavailableButton">Currently Unavailable</h1>
         </div>
+        <!-- Coffee Run -->
         <div class="ContentBackground">
-                <h1 class="ContentTitle">Coffee Run</h1>
+            <h1 class="ContentTitle">Coffee Run</h1>
+            <!-- Tags -->
+            <div class="TagGroup">
+                <h2 class="Tag">Game</h2>
+                <h2 class="Tag">Mobile</h2>
+                <h2 class="Tag">Endless Runner</h2>
+                <h2 class="Tag">Side Scroller</h2>
+                <h2 class="Tag">Single Player</h2>
+                <h2 class="Tag">3D</h2>
+            </div>
+                <!-- Description -->
+                <br>
+                <p class="ContentText" style="margin-top: 8vw; margin-left: -16vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Video -->
+                <video class="ContextVideo" controls src="videos/CoffeeRun_gameplay.mp4"></video>
+                <!-- Play Buttons -->
+                <h1 class="UnavailableButton">Currently Unavailable</h1>
         </div>
+        <!-- Conscience Clash -->
         <div class="ContentBackground">
-                <h1 class="ContentTitle">Conscience Clash</h1>
+            <h1 class="ContentTitle">Conscience Clash</h1>
+            <!-- Tags -->
+            <div class="TagGroup">
+                <h2 class="Tag">Game</h2>
+                <h2 class="Tag">Game Jam</h2>
+                <h2 class="Tag">Local Coop</h2>
+                <h2 class="Tag">2 Players</h2>
+                <h2 class="Tag">Tag</h2>
+                <h2 class="Tag">3D</h2>
+            </div>
+                <!-- Description -->
+                <br>
+                <p class="ContentText" style="margin-top: 8vw; margin-left: -25.5vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Video -->
+                <video class="ContextVideo" controls src="videos/ConscienceClash_fullgameplay.mp4"></video>
+                <!-- Play Buttons -->
+                <a href="https://hannahkateaird.itch.io/conscienceclash" target="_blank"><img class="PlayButton" src="icons/Itch io.png" alt = "Itch.io Link"></a>
         </div>
-
         <!-- Contact Page -->
-
+        <div class="ContentBackground">
+            <!-- Link point -->
+            <a id="Contact" style="position:relative; float:left; margin-top:-7vw;"></a>
+            <h1 class="ContentTitle">Contact</h1>
+        
+        </div>
     </body>
 </html>

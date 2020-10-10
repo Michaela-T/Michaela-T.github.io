@@ -24,14 +24,14 @@ body
 	top:0;
 	z-index: 1;
 	
-	height:4vw;
+	height:4.5vw;
     width:100%;
 	/* background-color:rgba(255, 255, 255, 0.1);  */
 }
 
 .Header:hover
 {
-	background-color:rgba(209, 209, 209, 0.3);
+	background-color:rgba(255, 255, 255, 0.404);
 }
 
 /* Logo */
@@ -39,7 +39,7 @@ body
 {
     position: relative;
     float: left;
-    margin-top: -.2vw;
+    margin-top: -.1vw;
     margin-left: 2vh;
 
     height: 3vw;
@@ -73,7 +73,7 @@ body
 	margin-top:1vw;
 	margin-left:-.5vw;
     margin-right:1vw;
-	height:2.5vw;
+	height:3vw;
     
     text-decoration:none;
 	transition-duration:0.1s;
@@ -83,6 +83,70 @@ body
 {
     filter: brightness(70%);
 	transform:scale(1.1);
+}
+
+/* Scroll up button */
+
+.ScrollButton
+{
+    /* display: none; */
+    position:fixed;
+    bottom: 1vh;
+    right: 2vw;
+
+    width: 5vw;
+    height: 5vw;
+
+    z-index: 100;
+    cursor: pointer;
+}
+
+.ScrollButton:hover
+{
+    filter: brightness(70%);
+	transform:scale(1.1);
+}
+
+/* Other buttons */
+
+.PlayButton
+{
+	position:relative;
+	float:right;
+	margin-top:4vw;
+    margin-right:15vw;
+	height:5vw;
+    
+	transition-duration:0.1s;
+}
+
+.PlayButton:hover
+{
+    filter: brightness(70%);
+	transform:scale(1.1);
+}
+
+.UnavailableButton
+{
+    position:relative;
+	float:right;
+	margin-top:4vw;
+    margin-right:13vw;
+    
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    font-size: 1vw;
+    color: rgb(172, 172, 172);
+    background-color: grey;
+    display:inline-block;
+    border-radius: 25px;
+
+    text-decoration:none;
+	transition-duration:0.1s;
 }
 
 /* Home page */
@@ -152,10 +216,61 @@ body
     position:relative;
     text-align: left;
     float:left;
-    margin-top: -18vw;
-    margin-left: 6vw;
     width: 60vw;
 
     font-size: 1vw;
     color: black;
 }
+
+.ContextVideo
+{
+    position: relative;
+    float: right;
+    margin-top: 1vw;
+    margin-right: 3vw;
+    width: 30vw;
+    height: 18vw;
+}
+
+/* Tags */
+
+.TagGroup
+{
+    position: relative;
+    float:left;
+
+    margin-top: 1vw;
+    margin-left: .5vw;
+    width: 50vw;
+    height:4vw;
+    
+    text-align: left;
+    /* background-color: black; */
+}
+
+.Tag
+{
+    display: inline-block;
+    border-radius: 25px;
+    height: 1.5vw;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 1.5vw;
+    margin-left: .5vw;
+
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(83, 83, 83);
+
+    transition-duration: .1s;
+}
+
+.Tag:hover
+{
+    transform:scale(1.1);
+    background-color: rgb(100, 100, 100);
+}
+
