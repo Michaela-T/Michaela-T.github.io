@@ -111,6 +111,7 @@ body
 {
     filter: brightness(70%);
 	transform:scale(1.1);
+    filter:drop-shadow(0 1px 2px rgb(131, 131, 131));
 }
 
 /* Other buttons */
@@ -118,10 +119,10 @@ body
 .PlayButton
 {
 	position:relative;
-	float:right;
-	margin-top:4vw;
-    margin-right:15vw;
-	height:5vw;
+	float:none;
+	margin-top:-5vw;
+    margin-right:30vw;
+	height:7vw;
     
 	transition-duration:0.1s;
 }
@@ -130,6 +131,8 @@ body
 {
     filter: brightness(70%);
 	transform:scale(1.1);
+    width:8vw;
+    filter:drop-shadow(0 3px 1px rgb(131, 131, 131));
 }
 
 .UnavailableButton
@@ -217,27 +220,38 @@ body
 
     font-size: 3.5vw;
     color: #6A96A6;
+
+	filter:drop-shadow(0 4px 1px rgb(131, 131, 131));
+
+    /*background-color:black;*/
 }
 
 .ContentText
 {
     position:relative;
     text-align: left;
-    float:left;
+    float:none;
+
     width: 60vw;
+    height: 40vh;
+    margin-top: 6vw;
+    margin-left: 2vw;
 
     font-size: 1vw;
     color: black;
+
+    /*background-color:black;*/
 }
 
-.ContextVideo
-{
+.ContextVideo {
     position: relative;
-    float: right;
-    margin-top: 1vw;
-    margin-right: 3vw;
-    width: 30vw;
-    height: 18vw;
+    float: none;
+    margin-top: -23.5vw;
+    margin-right: -62vw;
+    width: 66.04747162022704vh;
+    height: 49.53560371517028vh;
+    border: none;
+    filter: drop-shadow(0 6px 5px rgb(131, 131, 131));
 }
 
 /* Tags */
@@ -253,7 +267,7 @@ body
     height:4vw;
     
     text-align: left;
-    /* background-color: black; */
+    /*background-color: black;*/ 
 }
 
 .Tag
@@ -272,6 +286,7 @@ body
     font-weight: 100;
     color: white;
     background-color: rgb(83, 83, 83);
+    filter:drop-shadow(0 3px 1px rgb(131, 131, 131));
 
     transition-duration: .1s;
 }
