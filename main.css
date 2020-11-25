@@ -22,6 +22,7 @@ body
     filter: blur(7px);
     box-shadow: 0 2px 10px;
     background-color: rgba(163, 163, 163, 0.5);
+    background-color: rgba(68, 3, 3, 0.5);
 }
 
 /*HEADER*/
@@ -351,6 +352,29 @@ body
     background-color: rgb(100, 100, 100);
 }
 
+/* Resize header on extremely small screen */
+@media screen and (max-width:600px) 
+{
+    .HeaderLogo 
+    {
+        margin-top: 2vw;
+        font-size: 8vw;
+    }
+
+    .HeaderLink 
+    {
+        margin-top: 2vw;
+        height: 9vw;
+    }
+
+    .HeaderResume 
+    {
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+}
+
+/* Resize home page buttons */
 @media screen and (max-width:2350px) 
 {
     .HomePage
@@ -365,6 +389,7 @@ body
     }
 }
 
+/* Resize most elements */
 @media screen and (max-width:2000px) 
 {
     .Header
