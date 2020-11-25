@@ -248,8 +248,6 @@ body
     z-index: -70;
 
     background-color: rgba(255, 255, 255, 0.856);
-    background-color: rgba(255, 47, 47, 0.856);
-    
 }
 
 
@@ -303,13 +301,13 @@ body
 {
     position: relative;
     float: right;
-    margin-top: -42.5vh;
-    margin-right: 2vw;
-    max-width: 33.333333333333336vw;
-    max-height: 21.875vw;
+    margin-top: -53vh;
+    margin-right: 8vw;
+    max-width: 50vw;
+    max-height: 32vw;
     
     border: none;
-    filter: drop-shadow(0 6px 5px rgb(131, 131, 131));
+    filter: drop-shadow(0 10px 8px rgb(131, 131, 131));
 }
 /* Tags */
 
