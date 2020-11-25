@@ -152,9 +152,9 @@ body
 .PlayButton
 {
 	position:relative;
-	float:none;
-	margin-top:-5vw;
-    margin-right:30vw;
+	float:left;
+	margin-top:-4vw;
+    margin-left:28vw;
 	height:7vw;
     
 	transition-duration:0.1s;
@@ -163,8 +163,7 @@ body
 .PlayButton:hover
 {
     filter: brightness(70%);
-	transform:scale(1.1);
-    width:8vw;
+	transform:scale(1.15, 1.1);
     filter:drop-shadow(0 3px 1px rgb(131, 131, 131));
 }
 
@@ -275,7 +274,7 @@ body
 
     width: 60vw;
     height: 40vh;
-    margin-top: 6vw;
+    margin-top: 8vw;
     margin-left: 2vw;
 
     font-size: 1vw;
@@ -287,10 +286,10 @@ body
 .ContextVideo
 {
     position: relative;
-    float: none;
+    float: right;
 
-    margin-top: -23.5vw;
-    margin-right: -62vw;
+    margin-top: -42.5vh;
+    margin-right: 2vw;
     width: 33.333333333333336vw;
     height: 21.875vw;
 
@@ -319,7 +318,7 @@ body
     margin-top: 1vw;
     margin-left: .5vw;
     width: 56vw;
-    height:4vw;
+    height:auto;
     
     text-align: left;
     /*background-color: black;*/ 
@@ -373,6 +372,12 @@ body
         text-decoration: none;
     }
 
+    .ScrollButton
+    {
+        width: 15vw;
+        height: 15vw;
+    }
+
     .HomePage
     {
         margin-left: 25%;
@@ -380,30 +385,50 @@ body
 
     .ContentBackground 
     {
-        height: 65vw;
+        height: 100vw;
+        width: 100%;
     }
 
     .ContentTitle 
     {
-        font-size: 5.5vw;
+        float:none;
+        font-size: 9vw;
         filter: drop-shadow(0 3px 1px rgb(131, 131, 131));
+        /* background-color: black; */
     }
 
     .ContentText 
     {
-        width: 55vw;
-        height: 40vw;
-        margin-top: 9vw;
-        margin-left: 2vw;
+        width: 90%;
+        height: 50vw;
+        margin-top: 3vw;
+        margin-left: 5%;
         font-size: 3vw;
 
         overflow:scroll;
     }
 
+    .TagGroup
+    {
+        float:none;
+        /* background-color: black; */
+        margin-left: 5%;
+        width: 95%;
+
+    }
+
     .Tag 
     {
-        font-size: 2vw;
-        height: 2.5vw;
+        font-size: 3vw;
+        height: 4.5vw;
+    }
+}
+
+@media screen and (max-width:600px) 
+{
+    .ContentBackground 
+    {
+        height: 100vw;
     }
 }
 
