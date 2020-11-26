@@ -380,7 +380,7 @@ body
 }
 
 /* Resize home page buttons */
-@media screen and (max-width:2350px) 
+/* @media screen and (max-width:2350px) 
 {
     .HomePage
     {
@@ -392,10 +392,10 @@ body
         margin-right: 10vw;
         margin-left: 10vw;
     }
-}
+} */
 
 /* Resize most elements */
-@media screen and (max-width:2000px) 
+@media screen and (max-width:800px) 
 {
     .Header
     {
