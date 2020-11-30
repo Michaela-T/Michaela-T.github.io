@@ -301,11 +301,13 @@ body
 {
     position: relative;
     float: right;
-    margin-top: -53vh;
-    margin-right: 8vw;
-    max-width: 50vw;
-    max-height: 32vw;
-    
+    margin-top: -33vh;
+    margin-right: 13vw;
+    max-width: 30vw;
+    height:auto;
+    max-height: 10vw;
+    transform: scale(2);
+
     border: none;
     filter: drop-shadow(0 10px 8px rgb(131, 131, 131));
 }
@@ -379,12 +381,13 @@ body
     }
 }
 
-/* Resize home page buttons */
-/* @media screen and (max-width:2350px) 
+ /*Resize home page buttons*/ 
+ @media screen and (max-width:1700px) 
 {
     .HomePage
     {
         margin-top: 25vh;
+        /*background-color:red;*/
     }
 
     .HomeButton
@@ -392,7 +395,7 @@ body
         margin-right: 10vw;
         margin-left: 10vw;
     }
-} */
+} 
 
 /* Resize most elements */
 @media screen and (max-width:800px) 
